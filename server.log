@@ -1,0 +1,35 @@
+2025/07/14 10:43:26 🚀 Starting Blog API on port 8080
+2025/07/14 10:43:26 ✅ Connected to Supabase
+2025/07/14 10:43:26 ✅ Email service initialized with Resend
+2025/07/14 10:43:26 ✅ Blog API running on http://localhost:8080
+2025/07/14 10:43:26 📖 Endpoints:
+2025/07/14 10:43:26    GET  /health
+2025/07/14 10:43:26    GET  /posts
+2025/07/14 10:43:26    POST /posts
+2025/07/14 10:43:26    GET  /posts/{slug}
+2025/07/14 10:43:26    GET  /posts/{slug}/comments
+2025/07/14 10:43:26    POST /posts/{slug}/comments
+2025/07/14 10:43:26    POST /newsletter/subscribe
+2025/07/14 10:43:26    POST /newsletter/unsubscribe
+2025/07/14 10:43:26    GET  /newsletter/stats
+2025/07/14 10:43:26 🔐 Admin:
+2025/07/14 10:43:26    GET  /admin-login (Admin Login)
+2025/07/14 10:43:26    GET  /admin-dashboard (Admin Dashboard)
+2025/07/14 10:43:26    GET  /admin/dashboard (API)
+2025/07/14 10:43:26    GET  /admin/posts (API)
+2025/07/14 10:43:26    GET  /admin/comments (API)
+2025/07/14 10:43:26    GET  /admin/subscribers (API)
+2025/07/14 10:43:36 "GET http://localhost:8080/health HTTP/1.1" from [::1]:56064 - 200 44B in 11.975811ms
+2025/07/14 10:44:04 "POST http://localhost:8080/posts HTTP/1.1" from [::1]:56170 - 201 69B in 2.337582844s
+2025/07/14 10:44:24 "POST http://localhost:8080/posts HTTP/1.1" from [::1]:56268 - 201 62B in 1.053005011s
+2025/07/14 10:44:46 "POST http://localhost:8080/posts HTTP/1.1" from [::1]:56357 - 201 62B in 1.057273778s
+2025/07/14 10:44:56 "GET http://localhost:8080/posts HTTP/1.1" from [::1]:56403 - 200 8166B in 335.284635ms
+2025/07/14 10:54:35 "OPTIONS http://localhost:8080/admin/products HTTP/1.1" from [::1]:58923 - 200 0B in 62.479µs
+2025/07/14 10:54:36 "GET http://localhost:8080/admin/products HTTP/1.1" from [::1]:58923 - 200 2827B in 940.635696ms
+2025/07/14 10:54:36 "GET http://localhost:8080/admin/products HTTP/1.1" from [::1]:58923 - 200 2827B in 322.689147ms
+2025/07/14 10:55:22 "GET http://localhost:8080/products?featured=true&limit=4 HTTP/1.1" from [::1]:58923 - 200 2172B in 354.247612ms
+2025/07/14 10:55:22 "GET http://localhost:8080/posts?limit=3 HTTP/1.1" from [::1]:59127 - 200 7287B in 351.188821ms
+2025/07/14 10:56:06 "GET http://localhost:8080/posts HTTP/1.1" from [::1]:59330 - 200 8166B in 464.853852ms
+2025/07/14 10:58:04 "GET http://localhost:8080/posts?limit=3 HTTP/1.1" from [::1]:58923 - 200 7287B in 1.390707601s
+2025/07/14 10:58:04 "GET http://localhost:8080/products?featured=true&limit=4 HTTP/1.1" from [::1]:59127 - 200 2172B in 1.398271845s
+signal: killed
