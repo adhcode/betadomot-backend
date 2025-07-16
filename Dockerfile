@@ -1,6 +1,9 @@
 # Use the official Go image as the base image
 FROM golang:1.21-alpine
 
+# Install git (needed for go mod download)
+RUN apk add --no-cache git
+
 # Set the working directory
 WORKDIR /app
 
@@ -8,7 +11,7 @@ WORKDIR /app
 COPY go.mod go.sum ./
 
 # Download dependencies
-RUN go mod download
+RUN go mod download && go mod verify
 
 # Copy the source code
 COPY . .
